@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main()
+{
+    int* p_name = new int;
+    std::cout << "Address: " << p_name << " Value: " << *p_name << std::endl;
+
+    *p_name = 1;
+    std::cout << "Address: " << p_name << " Value: " << *p_name << std::endl;
+
+    p_name = new int(42);
+    std::cout << "Address: " << p_name << " Value: " << *p_name << std::endl;
+
+    
+    p_name = 1;
+    std::cout << "Address: " << p_name << " Value: " << *p_name << std::endl;
+
+}
